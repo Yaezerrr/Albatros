@@ -1,0 +1,102 @@
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url('images/albatross.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: 100vh; /* Full viewport height */
+        background-size: 100% 100vh; /* Cover width and height in mobile view */
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 100px;
+    }
+}
+
+.albatross-bird {
+    position: absolute;
+    margin-top: 70px;
+    left: 50%;
+    width: 100px;
+    transform: translateX(-50%);
+    animation: hover 2s ease-in-out infinite alternate, landing 5s forwards;
+}
+
+@keyframes hover {
+    0% { transform: translate(-50%, -10px); }
+    100% { transform: translate(-50%, 10px); }
+}
+
+@keyframes landing {
+    0% { top: -20%; }
+    100% { top: 30%; }
+}
+
+.content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 200px;
+    margin-bottom: 2rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6500;
+}

@@ -1,0 +1,106 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a04710; /* Light gray background for the whole page */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form container */
+#registrationForm {
+    background-color: #49365a; /* White background for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Maximum width of the form */
+    margin: auto; /* Center the form */
+    padding: 20px; /* Padding inside the form */
+}
+
+/* Headings */
+h1 {
+    text-align: center; /* Center the main title */
+    color: #007bff; /* Primary color for the header */
+}
+
+h2, h3 {
+    color: #cfc3c3; /* Darker gray for subheadings */
+    margin-top: 20px; /* Space above subheadings */
+}
+
+/* Labels */
+label {
+    font-weight: bold; /* Bold labels for better visibility */
+    color: #cfc3c3;
+    display: block; /* Labels take full width */
+    margin-top: 10px; /* Space above labels */
+}
+
+/* Input fields */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%; /* Full width for all inputs and selects */
+    padding: 10px; /* Padding inside inputs */
+    margin-top: 5px; /* Space above inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Focus styles for inputs */
+input:focus,
+select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+button {
+    background-color: #010d1a; /* Primary color for buttons */
+    color: #ed0707; /* White text for buttons */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Increase font size */
+    width: 100%; /* Full width for button */
+    margin-top: 20px; /* Space above button */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #registrationForm {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+}
+input[type="submit"] {
+    background-color: #28a745; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+input[type="submit"]:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Add a subtle shadow */
+}
